@@ -1,0 +1,11 @@
+title: Alp Eren Shahbazli
+description: Computer Engineering Student & Developer
+url: "https://alpachino012.github.io"
+baseurl: ""
+
+
+github_username: Alpachino012
+codecademy_username: Alpachino012
+
+markdown: kramdown
+permalink: /:title/
