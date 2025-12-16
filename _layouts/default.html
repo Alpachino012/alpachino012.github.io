@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Üst Menü -->
+    <header>
+      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </header>
+
+    <!-- BURASI ÇOK ÖNEMLİ: Sayfa içeriği buraya gelecek -->
+    <main>
+      {{ content }}
+    </main>
+
+    <!-- Alt Kısım -->
+    <footer>
+      <span style="font-size: 0.9rem; color: #777;">&copy; 2024 Alp Eren Shahbazli</span>
+      <div class="social-icons">
+        <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.codecademy.com/profiles/{{ site.codecademy_username }}" target="_blank"><i class="fas fa-laptop-code"></i></a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
